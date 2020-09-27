@@ -9,7 +9,7 @@ public class Session {
     private AppiumDriver driver;
 
     private Session() throws MalformedURLException {
-        driver = FactoryDevice.make("android").create();
+        driver = FactoryDevice.make("BrowserStack").create();
     }
     public static Session getInstance() throws MalformedURLException {
         if (session==null)
